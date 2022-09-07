@@ -146,9 +146,7 @@ a:hover {
 .miniatura{
 	width: 100px !important;
 }
-.img-fluid{
-	
-}
+
 
 .img-contenedor{
     position: relative;
@@ -186,7 +184,7 @@ p{
 	border-radius: 5px;
 	text-align: center;
 	background-color: #f4f4f4;
-	box-shadow: 5px 5px 10px 10px #C1C1C1;
+	box-shadow: 0px 0px 7px 7px #C1C1C1;
 }
 
 .card h2{
@@ -207,7 +205,7 @@ p{
 .card button:hover{
 	background-color: #c3002edf;
 	text-decoration: none;
-	box-shadow: 7px  #c3002f;
+	/*box-shadow: 0px 0px 1px 1px  #c3002f;*/
 	
 }
 
@@ -218,7 +216,7 @@ p{
 
 .card:hover{
 	background-color: #f4f4f4;
-	box-shadow: 3px 3px 10px 10px #C1C1C1;
+	box-shadow: 1px 1px 10px 10px #C1C1C1;
 }
 
 .thumbnail{
@@ -226,10 +224,113 @@ p{
 }
 
 .imgSec:hover{
-	border: #c3002f solid 2px;
+	border: #c3002f solid 1px;
 	box-shadow: 0px 0px 2px 2px #c3002f;	
+	cursor: pointer;
 }
 
 .thumbnail{
 	height: 200px;
 }
+
+/*Acordion*/
+.accordion {
+	background-color: #555;
+	color: #fff;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border-top: 1px solid #fff;
+	
+  }
+  
+  .active, .accordion:hover {
+	background-color: #c3002f;
+	color: #fff;
+  }
+  
+  .accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	color: #fff;
+  }
+  
+  .active:after {
+	content: "\2212";
+	color: #fff;
+  }
+  
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.8s ease-out;
+  }
+
+  .accord-firt{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  }
+
+  .panel img{
+	width: 100%;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.panel{
+	text-align: center;
+	padding: 1px;
+}
+.info-padre{
+	position: relative;
+}
+.info-caract{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.carac-desempeno, .carac-exterior, .carac-interior, .carac-seguridad{
+	padding: 10px;
+}
+
+.info-caract{
+	background-color: #efefef;
+	border-radius: 7px;
+	padding: 10px;
+	width: 80%;
+}
+
+.tabla-esp table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+.tabla-esp table th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #c3002f;
+  }
+
+table td span{
+	color: #c3002f;
+	font-size: 20px;
+}
+
+.tabla-esp table tr:hover {
+	background-color: #fbf0f2;
+  }
+
+/*Fin Acordion*/
+
