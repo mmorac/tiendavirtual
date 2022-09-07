@@ -216,3 +216,20 @@ p{
 	text-decoration: none;
 }
 
+.card:hover{
+	background-color: #f4f4f4;
+	box-shadow: 3px 3px 10px 10px #C1C1C1;
+}
+
+.thumbnail{
+	margin-top: 10px;
+}
+
+.imgSec:hover{
+	border: #c3002f solid 2px;
+	box-shadow: 0px 0px 2px 2px #c3002f;	
+}
+
+.thumbnail{
+	height: 200px;
+}
