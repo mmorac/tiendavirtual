@@ -1,0 +1,65 @@
+{
+    "Qashqai":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "Patrol":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "Sentra":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "Pathfinder":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "Kicks":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "Frontier":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "X-Trail":
+    {
+        "marca": "Nissan",
+        "modelo": "Qashqai",
+        "ano": 2023,
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    }
+
+}
