@@ -1,11 +1,11 @@
 *,*:before,*:after {
 	box-sizing: border-box;
 }
-
+/*
 :after {
 	content: "";
 }
-
+*/
 body {
   padding: 100px 0 0 0;
 	font-family: 'Montserrat', sans-serif;
@@ -283,33 +283,38 @@ p{
 
  main img{
 	width: 100%;
-	border-radius: 10px;
-	margin: 5px;
+	border-radius: 5px;
+	margin: 1px;
 }
 
 .panel{
 	text-align: center;
 	padding: 1px;
 }
+/*
 .info-padre{
 	position: relative;
 }
+*/
+/*
 .info-caract{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
+*/
 .carac-desempeno, .carac-exterior, .carac-interior, .carac-seguridad{
 	padding: 10px;
 }
 
 .info-caract{
-	background-color: #efefef;
-	border-radius: 7px;
+	background-color:#777;
+	color: #fff;
+	border-radius: 4px;
 	padding: 10px;
-	width: 80%;
+	width: 100%;
+	height: 100%;
 }
 
 .tabla-esp table {
@@ -365,8 +370,9 @@ body {
 }
 */
 main {
-  width: 100%;
-  margin: 30px auto;
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
 	background: #3F3F3D;
 	color: #fff;
 	padding: 30px;
@@ -375,7 +381,7 @@ main {
 input[name=css-tabs] {
   display: none;
 }
-a {
+main a {
 	color: #c3002f;
 }
 #tabs {
@@ -414,7 +420,7 @@ a {
 	z-index: 100;
 	display: block;
 	float: left;
-  font-size: 11px;
+  	font-size: 11px;
 	text-transform: uppercase;
 	text-align: center;
 	width: 100px;
@@ -500,4 +506,79 @@ a {
 #radio1:checked ~ #content #content1, #radio2:checked ~ #content #content2, #radio3:checked ~ #content #content3, #radio4:checked ~ #content #content4 {
 	transform: translateY(0);
 	opacity: 1;
+}
+
+.seccionTabs{
+	height: auto;
+}
+
+@media (max-width:990px) {
+	main{
+		height: 980px;
+	}
+}
+
+
+
+@media (max-width:482px) {
+
+	main{
+		height: 1020px;
+	}
+
+	#tabs label{
+		position: relative;
+		z-index: 100;
+		display: block;
+		float: left;
+		font-size: 7px;
+		text-transform: uppercase;
+		text-align: center;
+		width: 70px;
+		height: 100%;
+		border-right: 1px dotted #575654;
+		cursor: pointer;
+	}
+
+	main input{
+		width: 70px;
+		height: 100%;
+	}
+
+	#tabs::after {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 0;
+		height: 80px;
+		width: 72px;
+		background: #c3002f;
+		transition: transform 400ms;
+	}
+	#tabs::before {
+	
+		display: block;
+		position: absolute;
+		z-index: -100;
+		width: 100%;
+		left: 0;
+		margin-top: 16px;
+		height: 80px;
+		background: #2B2A28;
+		border-bottom: 5px solid #c3002f;
+	}
+
+	#radio1:checked ~ #tabs::after {
+		transform: translateX(0);
+	}
+	#radio2:checked ~ #tabs::after {
+		transform: translateX(70px);
+	}
+	#radio3:checked ~ #tabs::after {
+		transform: translateX(140px);
+	}
+	#radio4:checked ~ #tabs::after {
+		transform: translateX(210px);
+	}
+	
 }
