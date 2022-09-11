@@ -580,5 +580,11 @@ main a {
 	#radio4:checked ~ #tabs::after {
 		transform: translateX(210px);
 	}
+
+	.lateralDetalle{
+		font-style: oblique;
+		font-weight: bold;
+		width: 50%;
+	 }
 	
 }
