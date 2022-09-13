@@ -1,64 +1,57 @@
 {
     "Qashqai":
     {
-        "marca": "Nissan",
+        "estilo": "SUV",
         "modelo": "Qashqai",
-        "ano": 2023,
         "cilindraje": 1800,
         "extras": "Vidrios eléctricos, cierre central, sunroof"
     },
 
-    "Patrol":
+    "Versa":
     {
-        "marca": "Nissan",
-        "modelo": "Qashqai",
-        "ano": 2023,
-        "cilindraje": 1800,
-        "extras": "Vidrios eléctricos, cierre central, sunroof"
+        "estilo": "Sedan",
+        "modelo": "Versa",
+        "cilindraje": 1600,
+        "extras": "Vidrios eléctricos, cierre central, sunroof, cruise control"
     },
 
     "Sentra":
     {
-        "marca": "Nissan",
-        "modelo": "Qashqai",
-        "ano": 2023,
+        "estilo": "Sedan",
+        "modelo": "Sentra",
         "cilindraje": 1800,
-        "extras": "Vidrios eléctricos, cierre central, sunroof"
+        "extras": "Vidrios eléctricos, cierre central, sunroof, cámara de retroceso"
     },
 
-    "Pathfinder":
+    "Leaf":
     {
-        "marca": "Nissan",
-        "modelo": "Qashqai",
-        "ano": 2023,
-        "cilindraje": 1800,
-        "extras": "Vidrios eléctricos, cierre central, sunroof"
+        "estilo": "Sedan",
+        "modelo": "Leaf",
+        "cilindraje": 1600,
+        "extras": "Vidrios eléctricos, cierre central, dirección electroasistida"
     },
 
     "Kicks":
     {
-        "marca": "Nissan",
-        "modelo": "Qashqai",
-        "ano": 2023,
-        "cilindraje": 1800,
-        "extras": "Vidrios eléctricos, cierre central, sunroof"
+        "estilo": "SUV",
+        "modelo": "Kicks",
+        "cilindraje": 2000,
+        "extras": "Vidrios eléctricos, cierre central"
     },
 
     "Frontier":
     {
-        "marca": "Nissan",
-        "modelo": "Qashqai",
-        "ano": 2023,
-        "cilindraje": 1800,
-        "extras": "Vidrios eléctricos, cierre central, sunroof"
+        "estilo": "Pickup",
+        "modelo": "Frontier",
+        "cilindraje": 2600,
+        "extras": "Vidrios eléctricos, cierre central, sunroof, space cab"
     },
 
     "X-Trail":
     {
-        "marca": "Nissan",
-        "modelo": "Qashqai",
-        "ano": 2023,
-        "cilindraje": 1800,
+        "estilo": "SUV",
+        "modelo": "X-Trail",
+        "cilindraje": 2400,
         "extras": "Vidrios eléctricos, cierre central, sunroof"
     }
 
