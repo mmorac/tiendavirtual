@@ -1,0 +1,59 @@
+{
+    "Qashqai":
+    {
+        "estilo": "SUV",
+        "modelo": "Qashqai",
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    },
+
+    "Versa":
+    {
+        "estilo": "Sedan",
+        "modelo": "Versa",
+        "cilindraje": 1600,
+        "extras": "Vidrios eléctricos, cierre central, sunroof, cruise control"
+    },
+
+    "Sentra":
+    {
+        "estilo": "Sedan",
+        "modelo": "Sentra",
+        "cilindraje": 1800,
+        "extras": "Vidrios eléctricos, cierre central, sunroof, cámara de retroceso"
+    },
+
+    "Leaf":
+    {
+        "estilo": "Sedan",
+        "modelo": "Leaf",
+        "cilindraje": 1600,
+        "extras": "Vidrios eléctricos, cierre central, dirección electroasistida"
+    },
+
+    "Kicks":
+    {
+        "estilo": "SUV",
+        "modelo": "Kicks",
+        "cilindraje": 2000,
+        "extras": "Vidrios eléctricos, cierre central"
+    },
+
+    "Frontier":
+    {
+        "estilo": "Pickup",
+        "modelo": "Frontier",
+        "cilindraje": 2600,
+        "extras": "Vidrios eléctricos, cierre central, sunroof, space cab"
+    },
+
+    "X-Trail":
+    {
+        "estilo": "SUV",
+        "modelo": "X-Trail",
+        "cilindraje": 2400,
+        "extras": "Vidrios eléctricos, cierre central, sunroof"
+    }
+
+}
+
