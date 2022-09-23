@@ -7,11 +7,14 @@
 }
 */
 body {
-    padding: 100px 0;
+    /*padding: 100px 0;*/ /*nuevo*/
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
     line-height:1.4;
-
+	margin: 0; /*nuevo*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 nav {
@@ -87,6 +90,7 @@ nav ul li div { position: relative; }
 
 .menuflotante{
     padding-left: 0;
+	float: left;
 }
 
 /* Footer */
