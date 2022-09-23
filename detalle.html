@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AGREGANDO REFERENCIA A JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!--AGREGANDO BOOTSTRAP 5.2-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -12,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!--AGREGANDO REFERENCIA AL CSS INTERNO-->
     <link rel="stylesheet" href="styles/style.css">
+    <!--AGREGANDO REFERENCIA AL JS PROPIO-->
+    <script language="JavaScript" type="text/javascript" src="scripts/scriptdetalle.js"></script>
     <!-- TÍTULO DE LA PÁGINA-->
     <title>NISSAN FRONTIER PRO</title>
 </head>
@@ -23,9 +27,9 @@
         <div class="seccionImg">
             <div class="">
                 <div class="img-contenedor col-12 text-uppercase">
-                    <img id="imgPrin" src="img/item/nissan-1.jpg" class="img-fluid">
+                    <img id="imgPrin" class="img-fluid">
                     <div class="card-img-overlay">
-                        <h1 class="card-title text-white">nissan frontier</h1>
+                        <h1 id="titulo" class="card-title text-white">nissan frontier</h1>
                         <p class="card-text text-white">impulsa tu modo pro</p>
                     </div>
                     <div class="row thumbnail">
@@ -47,9 +51,9 @@
                 <br>
                 <div class="row">
                     <div class="descripcion col-md-9 col-sm-12">
-                        <h1>NISSAN FRONTIER PRO-4X</h1>
+                        <h1 id="detalles-titulo-descripcion">NISSAN FRONTIER PRO-4X</h1>
                         <h4>Descripción:</h4>
-                        <p>Creada bajo el histórico legado de pick-ups Nissan Frontier hechas para resistirlo todo. PRO como para llevarte hasta dondetu imaginación lo permita. Nissan Frontier PRO-4X está hecha para superar cualquier desafío extremo que el off-road te presente.
+                        <p id="detalles-descripcion">Creada bajo el histórico legado de pick-ups Nissan Frontier hechas para resistirlo todo. PRO como para llevarte hasta dondetu imaginación lo permita. Nissan Frontier PRO-4X está hecha para superar cualquier desafío extremo que el off-road te presente.
                         <br>
                         La Nueva Nissan Frontier está equipada con las mejores tecnologías Nissan Intelligent Mobility, haciéndola la más avanzada de la historia.
                         </p>
@@ -57,7 +61,7 @@
                     <div class="precio col-md-3 col-sm-12">
                         <div class="card">
                             <h4>Desde:</h4>
-                            <h2><strong>$32,000.00</strong></h2>
+                            <h2 id="detalles-precio"><strong>$32,000.00</strong></h2>
                             <div class="cotizar">
                                 <button>
                                     <i class="bi bi-calculator"></i>
@@ -85,39 +89,35 @@
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>MODELO:</td>
-                                    <td>FRONTIER PRO</td>
+                                    <td id="detalles-modelo">FRONTIER PRO</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>AÑO:</td>
-                                    <td>2023</td>
+                                    <td id="detalles-ano">2023</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>COMBUSTIBLE:</td>
-                                    <td>GASOLINA</td>
+                                    <td id="detalles-combustible">GASOLINA</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>TRACCIÓN:</td>
-                                    <td>4X4</td>
+                                    <td id="detalles-traccion">4X4</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>TRANSMISIÓN:</td>
-                                    <td>6 VELOCIDADES</td>
+                                    <td id="detalles-transmision">6 VELOCIDADES</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>CILINDRAJE MOTOR:</td>
-                                    <td>4000 cc</td>
+                                    <td id="detalles-cilindraje">4000 cc</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>VELOCIDAD MÁXIMA:</td>
-                                    <td>200 KM/h</td>
-                                </tr>
-                                <tr>
-                                    <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>CAPACIDAD:</td>
-                                    <td>5 PASAJEROS</td>
+                                    <td id="detalles-velocidad-maxima">200 KM/h</td>
                                 </tr>
                                 <tr>
                                     <td class="lateralDetalle"><i class="bi bi-check-lg">&nbsp;</i>ESTILO:</td>
-                                    <td>PICK UP</td>
+                                    <td id="detalles-estilo">PICK UP</td>
                                 </tr>
                             </table>
                             <br>
@@ -127,49 +127,6 @@
                     </div>
                 </div><!---->
                 
-                <div class="seccion-especificacions">
-                    <button class="accordion">Especificaciones</button>
-                    <div class="panel">
-                        <div class="tabla-esp">
-                            <table>
-                                <tr>
-                                    <td><span>>  </span>MOTOR YD25 2.5 LITROS DIÉSEL</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>TRANSMISIÓN MANUAL DE 6 VELOCIDADES</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>TRANSMISIÓN AUTOMÁTICA DE 7 VELOCIDADES</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>SHIFT-ON-THE-FLY 4X4</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>MÁS SILENCIOSA Y CÓMODA</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>TECNOLOGÍAS OFF-ROAD</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>BLOQUEO DE DIFERENCIAL TRASERO</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>DIFERENCIAL DE DESLIZAMIENTO LIMITADO (LSD)</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>ASISTENTE DE ASCENSO EN PENDIENTES (HILL START ASSIST)</td>
-                                </tr>
-                                <tr>
-                                    <td><span>>  </span>CONTROL DE DESCENSO EN PENDIENTES (HILL DESCENT CONTROL)</td>
-                                </tr>
-
-                            </table>
-                        </div>
-                        
-                    
-                    </div>
-                </div><!---->
-
                
             </div>
             <br>
@@ -207,12 +164,12 @@
                                             <p>¡Ahorrá al máximo con su potente motor híbrido! La fuerza del motor de combustión combinado con su potente motor eléctrico te permiten 
                                                 llegar donde querás manteniendo su funcionamiento en más de un 60% el tiempo en modo eléctrico.
                                             </p>
-                                        <h6><strong>LA POTENCIA DE NISSAN FRONTIER TE AYUDA A SUPERARLO TODO</strong></h6>
-                                        <p>Cuando existen desafíos por vencer, Frontier tiene toda la potencia y torque que necesitas para superarlos como un PRO.</p>
-                                        <p>El sistema Shift-on-the-fly de Nissan Frontier te permite cambiar de 4x2 a 4x4 mientras conduces. 
+                                        <h6><strong>LA POTENCIA DE NISSAN TE AYUDA A SUPERARLO TODO</strong></h6>
+                                        <p>Cuando existen desafíos por vencer, Nissan tiene toda la potencia y torque que necesitas para superarlos como un PRO.</p>
+                                        <p>El sistema Shift-on-the-fly de Nissan te permite cambiar de 4x2 a 4x4 mientras conduces. 
 
 
-                                            El modo 4X4 H te sirve para cuando necesites activar la tracción en todas las llantas de tu Nissan Frontier, mientras que el modo 4x4 LO es útil cuando necesites 
+                                            El modo 4X4 H te sirve para cuando necesites activar la tracción en todas las llantas de tu Nissan, mientras que el modo 4x4 LO es útil cuando necesites 
                                             salir de terrenos difíciles como arena o lodo a menor velocidad.</p>    
                                     </div>
                                 </div>
@@ -234,11 +191,11 @@
                                     <div class="info-caract">
                                         <h5>SUBE, BAJA, VUÉLVELO A HACER Y SIGUE VIÉNDOTE BIEN.</h5>
                                         <h3>DISEÑO EXTERIOR</h3>
-                                            <p>Ante cualquier paisaje, el atractivo y rudo diseño de la Nueva Nissan Frontier PRO-4X capturará tu vista.</p>
+                                            <p>Ante cualquier paisaje, el atractivo y rudo diseño de la Nueva Nissan capturará tu vista.</p>
                                         <h4>RESISTENCIA TODOTERRENO</h4>  
-                                        <p>Nissan Frontier PRO-4X es confianza y resistencia para llegar a donde tú quieras, por eso, cuenta con una mejorada suspensión Multilink y tracción 4X4.</p>
+                                        <p>Nissan es confianza y resistencia para llegar a donde tú quieras, por eso, cuenta con una mejorada suspensión Multilink y tracción 4X4.</p>
                                         <h4>NISSAN INTELLIGENT MOBILITY</h4>  
-                                        <p>Con Nissan Intelligent Mobility, Frontier PRO-4X revoluciona cada viaje, desde superar cualquier condición off-road hasta hacer más simple tu día a día.</p>
+                                        <p>Con Nissan Intelligent Mobility, Nissan revoluciona cada viaje, desde superar cualquier condición off-road hasta hacer más simple tu día a día.</p>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +216,7 @@
                                     <div class="info-caract">
                                         <h5>INTELLIGENT INTEGRATION</h5>
                                         <h3>CONFIANZA EN CADA CAMINO</h3>
-                                        <p>Nissan Frontier junto a nuestras tecnologías Nissan Intelligent Mobility transforman cómo conduces, desde seguridad 
+                                        <p>Nissan junto a nuestras tecnologías Nissan Intelligent Mobility transforman cómo conduces, desde seguridad 
                                             avanzada que siempre ve por ti, a conectividad que mantiene tu mundo cerca tuyo. Y con tecnología de punta que te ayuda 
                                             a conquistar cualquier terreno off-road, cada viaje es más seguro, fácil y emocionante.</p>
                                             <p>Cuando la rudeza del camino lo exija, Nissan Frontier está lista para superarlo todo:</p>

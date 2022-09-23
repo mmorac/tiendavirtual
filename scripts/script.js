@@ -1,3 +1,5 @@
+//const { Console } = require("console");
+
 let items = [];
 
 function moveToItemPage(index) {
@@ -26,13 +28,14 @@ $(document).ready(function () {
 
 
                 data.forEach((carro) => {
+                    localStorage.setItem(carro.modelo, JSON.stringify(carro));
                     if(index % 3 == 0){
                         html+='<div class="row">';
                     }
                     html+='<div class="col-md-4 mt-3"><a href="#">';
                     html+='<img class="img-fluid imagencarro" src="' + carro.urlimagen + '" alt="' + carro.modelo + '">';
-                    html+='<div class="text-start"><a href="#" class="car-name"><h2>'+ carro.modelo +'</h2></a><p class="vehicle-strapling">llega como quieres</p></div>';
-                    html+='<div class="text-start"><a href="#" class="cta-explore">mas informacion</a><a href="#" class="cta-explore-btn">></a></div><hr class="cta-division mb-4"><div class="text-start"><a href="#" class="cta-explore">Cotice aqui</a><a href="#" class="cta-explore-btn">></a></div><hr class="cta-division"></div>';
+                    html+='<div class="text-start"><a href="detalle.html?modelo=' + carro.modelo + '" class="car-name"><h2>'+ carro.modelo +'</h2></a><p class="vehicle-strapling">llega como quieres</p></div>';
+                    html+='<div class="text-start"><a href="detalle.html?modelo=' + carro.modelo + '" class="cta-explore">mas informacion</a><a href="#" class="cta-explore-btn">></a></div><hr class="cta-division mb-4"><div class="text-start"><a href="#" class="cta-explore">Cotice aqui</a><a href="#" class="cta-explore-btn">></a></div><hr class="cta-division"></div>';
                     index++;
                     if(index % 3 == 0){
                         html+='</div>';
@@ -48,4 +51,3 @@ $(document).ready(function () {
 
     getAllProducts();
 })
-
